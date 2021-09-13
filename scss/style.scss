@@ -1,0 +1,105 @@
+@import "nullstyle";
+@import "limitation";
+//========================Шрифти========================//
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+//========================Змінні========================//
+$color1: #49464f;
+$color2: #7140eb;
+$color3: #8172a2;
+$color4: #fbf7f3;
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: $color4;
+}
+//======================================================//
+
+.btn {
+	a {
+		display: inline-block;
+		color: $color4;
+		font-size: 16px;
+		line-height: 118%;
+		background: $color2;
+		border-radius: 9999px;
+		padding: 10px 25px 10px 25px;
+	}
+}
+//========================Header========================//
+.header {
+	&__block {
+		min-width: 71px;
+		display: flex;
+		margin-left: 23px;
+		margin-right: 29px;
+		justify-content: space-between;
+		margin-top: 20px;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	&__logo {
+		margin-right: 10px;
+	}
+
+	&__menu {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__land {
+		color: #8d867c;
+		position: relative;
+		font-size: 15px;
+		line-height: calc(19 / 15 * 100%);
+		a:nth-child(1):after {
+			content: "/";
+		}
+		.active {
+			color: $color1;
+		}
+		a:nth-child(2) {
+			left: -3px;
+			margin-right: 44px;
+		}
+	}
+
+	&__button {
+		a:active {
+			background: rgb(240, 204, 2);
+		}
+	}
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	&__item {
+		//margin-bottom: 15px;
+		display: flex;
+		a {
+			display: inline-block;
+		}
+		.active {
+			a {
+				color: $color1;
+			}
+		}
+	}
+
+	&__list {
+		margin-right: 50px;
+		a {
+			color: #8d867c;
+			font-size: 15px;
+			line-height: calc(19 / 15 * 100%);
+		}
+	}
+}
+
+//========================Main========================//
+main {
+	flex: 1 1 auto;
+}
+//========================Footer========================//
