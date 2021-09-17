@@ -234,7 +234,7 @@ main {
 }
 
 .sub__container {
-  background: url("/img/main/sub/01.png") no-repeat;
+  background: url("img/main/sub/01.png") no-repeat;
   background-size: cover;
 }
 
@@ -280,7 +280,7 @@ main {
 
 .content__block {
   height: 800px;
-  background: url("/img/main/content/01.png") 0 100% no-repeat;
+  background: url("img/main/content/01.png") 0 100% no-repeat;
   background-size: cover;
   padding: 80px 52px 0px 20px;
   margin-bottom: 105px;
