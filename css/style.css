@@ -280,8 +280,10 @@ main {
 
 .content__block {
   height: 800px;
-  background: url("/img/main/content/01.png") no-repeat;
+  background: url("/img/main/content/01.png") 0 100% no-repeat;
+  background-size: cover;
   padding: 80px 52px 0px 20px;
+  margin-bottom: 105px;
 }
 
 .content__text {
@@ -297,4 +299,115 @@ main {
 .content__text span {
   font-size: 29px;
   line-height: calc(28 / 29 * 100%);
+}
+
+.bike__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bike__text {
+  max-width: 440px;
+  margin-top: -100px;
+}
+
+.bike__text h3 {
+  color: #49464f;
+  font-size: 82px;
+  line-height: calc(81 / 82 * 100%);
+  margin-bottom: 46px;
+}
+
+.bike__text span {
+  display: block;
+  max-width: 330px;
+  color: #8172a2;
+  font-size: 20px;
+  line-height: calc(20 / 23 * 100%);
+  text-align: center;
+}
+
+.bike__image img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bike__sub {
+  position: relative;
+}
+
+.bike__sub p {
+  font-size: 12px;
+  color: #49464f;
+  line-height: calc(14 / 12 * 100%);
+  margin-bottom: 26px;
+}
+
+.bike__list li::before {
+  content: "";
+  padding: 20px 20px;
+  background: #7140eb;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  margin-top: -8px;
+}
+
+.list__items {
+  color: #8172a2;
+  font-size: 19px;
+  line-height: calc(23 / 19 * 100%);
+  padding-left: 55px;
+}
+
+.list__items:not(:last-child) {
+  padding-bottom: 35px;
+}
+
+.bike2__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bike2__text {
+  color: #49464f;
+  font-size: 79px;
+  line-height: calc(81 / 79 * 100%);
+  text-align: center;
+}
+
+.bike2__text span {
+  margin-top: 11px;
+  display: block;
+  color: #8172a2;
+  font-size: 20px;
+  line-height: calc(23 / 20 * 100%);
+}
+
+.bike2__image img {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
