@@ -196,6 +196,9 @@ main {
 
 	&__sub {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 auto;
 		p {
 			font-size: 12px;
 			color: $color1;
