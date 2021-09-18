@@ -68,6 +68,7 @@ body {
 	}
 
 	&__button {
+		padding-right: 7px;
 		a:active {
 			background: rgb(240, 204, 2);
 		}
@@ -77,7 +78,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-
+	padding: 10px 0px;
 	&__item {
 		display: flex;
 		a {
@@ -92,6 +93,9 @@ body {
 
 	&__list {
 		margin-right: 50px;
+		&:nth-child(1) {
+			margin-left: 40px;
+		}
 		a {
 			color: #8d867c;
 			font-size: 15px;
@@ -238,6 +242,7 @@ main {
 	&__block {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 45px;
 	}
 
 	&__text {
@@ -261,6 +266,115 @@ main {
 			height: 100%;
 			position: relative;
 		}
+	}
+}
+.char {
+	&__block {
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__collumn {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1 0 33.333%;
+		padding-bottom: 165px;
+		justify-content: center;
+	}
+}
+.collumn {
+	&__items {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 33.333%;
+		padding-bottom: 20px;
+		&:not(:last-child) {
+			padding-right: 15px;
+		}
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: calc(36 / 30 * 100%);
+		color: #2e2c34;
+		margin-bottom: 12px;
+	}
+
+	&__image {
+		margin-bottom: 22px;
+	}
+
+	&__text {
+		max-width: 159px;
+		font-size: 20px;
+		line-height: calc(23 / 20 * 100%);
+		color: $color1;
+	}
+}
+.photo {
+	&__content {
+		img {
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+	}
+}
+.stay {
+	&__block {
+		background: url("../img/main/stay/Rectangle.jpg") no-repeat;
+		background-size: cover;
+	}
+
+	&__block-text {
+		margin-top: 165px;
+	}
+
+	&__collumn {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.block-text {
+	&__title {
+		font-size: 85px;
+		line-height: calc(81 / 85 * 100%);
+		color: $color1;
+		letter-spacing: 2.7px;
+		margin-bottom: 35px;
+	}
+
+	&__text {
+		max-width: 305px;
+		color: $color3;
+		font-size: 19px;
+		line-height: calc(22 / 19 * 100%);
+		margin-bottom: 175px;
+	}
+}
+.collumn-stay {
+	&__items {
+		display: flex;
+		flex-direction: column;
+		flex: 0 1 33.333%;
+		padding-bottom: 50px;
+		&:not(:last-child) {
+			padding-right: 15px;
+		}
+	}
+
+	&__image {
+		margin-bottom: 77px;
+	}
+
+	&__text {
+		max-width: 283px;
+		color: $color1;
+		font-size: 22px;
+		line-height: calc(27 / 22 * 100%);
 	}
 }
 
