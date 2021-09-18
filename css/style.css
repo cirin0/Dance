@@ -126,6 +126,7 @@ h6 {
 body {
   font-family: "Roboto", sans-serif;
   color: #fbf7f3;
+  background: #fbf7f3;
 }
 
 .btn a {
@@ -164,6 +165,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: #fff;
+  border-radius: 9999px;
 }
 
 .header__land {

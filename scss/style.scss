@@ -11,6 +11,7 @@ $color4: #fbf7f3;
 body {
 	font-family: "Roboto", sans-serif;
 	color: $color4;
+	background: $color4;
 }
 //======================================================//
 
@@ -45,6 +46,8 @@ body {
 	&__menu {
 		display: flex;
 		flex-wrap: wrap;
+		background: #fff;
+		border-radius: 9999px;
 	}
 
 	&__land {
