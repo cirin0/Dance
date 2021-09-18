@@ -269,9 +269,6 @@ main {
 	}
 }
 .char {
-	&__block {
-	}
-
 	&__row {
 		display: flex;
 	}
@@ -326,6 +323,7 @@ main {
 	&__block {
 		background: url("../img/main/stay/Rectangle.jpg") no-repeat;
 		background-size: cover;
+		padding-bottom: 27px;
 	}
 
 	&__block-text {
@@ -379,3 +377,46 @@ main {
 }
 
 //========================Footer========================//
+.footer {
+	&__join {
+	}
+}
+.join {
+	&__block {
+		background: #f7f0ea;
+		display: flex;
+		justify-content: space-between;
+		padding: 165px 0px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__block-card-left {
+	}
+
+	&__block-text-join {
+		margin: 0 15px;
+		max-width: 510px;
+		text-align: center;
+		color: $color1;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.block-text {
+	&__title-join {
+		font-size: 71px;
+		line-height: calc(81 / 71 * 100%);
+		letter-spacing: 2.7px;
+		margin-bottom: 35px;
+	}
+
+	&__text-join {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 500px;
+		font-size: 20px;
+		line-height: calc(22 / 20 * 100%);
+	}
+}

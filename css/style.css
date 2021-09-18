@@ -501,6 +501,7 @@ main {
 .stay__block {
   background: url("../img/main/stay/Rectangle.jpg") no-repeat;
   background-size: cover;
+  padding-bottom: 27px;
 }
 
 .stay__block-text {
@@ -561,4 +562,52 @@ main {
   color: #49464f;
   font-size: 22px;
   line-height: calc(27 / 22 * 100%);
+}
+
+.join__block {
+  background: #f7f0ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 165px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.join__block-text-join {
+  margin: 0 15px;
+  max-width: 510px;
+  text-align: center;
+  color: #49464f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block-text__title-join {
+  font-size: 71px;
+  line-height: calc(81 / 71 * 100%);
+  letter-spacing: 2.7px;
+  margin-bottom: 35px;
+}
+
+.block-text__text-join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 500px;
+  font-size: 20px;
+  line-height: calc(22 / 20 * 100%);
 }
